@@ -2,8 +2,8 @@
 Semester project in LSD
 
 Roles:
-Pm - Rune V. Zimsen
-Architect - Emil R. Pederden
+Project Manager - Rune V. Zimsen
+System Architect - Emil R. Pederden
 DevOps - Dennis M. Rønnebæk
-LeadDeveloper - Ebbe V. Neíelsen
-QA - Nicolai Bonnerup
+Lead Developer - Ebbe V. Neíelsen
+Quality Assurance - Nicolai Bonderup
