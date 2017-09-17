@@ -536,31 +536,31 @@ Bob: User
 
 ###### Flow of events
 
-*1.* Bob clicks the upvote button on a post.
-*2.* The frontend sends a request to the API indicating that the given user wants to upvote the post.
-*3.* The backend receives the request, confirms that the user is permitted to perform the action, and registers the user vote and increments the upvote count by 1.
-*4.* The web application receives a response, indicating that the request was successful.
-*5.* The upvote button is highlighted, indicating that Bob has upvoted the post.
+1. Bob clicks the upvote button on a post.
+2. The frontend sends a request to the API indicating that the given user wants to upvote the post.
+3. The backend receives the request, confirms that the user is permitted to perform the action, and registers the user vote and increments the upvote count by 1.
+4. The web application receives a response, indicating that the request was successful.
+5. The upvote button is highlighted, indicating that Bob has upvoted the post.
 
 ###### Entry conditions
 
-*6.* Bob has logged in successfully.
+6. Bob has logged in successfully.
 
-*7.* The post is not upvoted yet by Bob.
+7. The post is not upvoted yet by Bob.
 
 ###### Exit conditions
 
-*8.* Bob has received acknowledgement that the post has been upvoted, OR
-*9.* Bob has received an explanation indicating why the transaction could not be processed.
+8. Bob has received acknowledgement that the post has been upvoted, OR
+9. Bob has received an explanation indicating why the transaction could not be processed.
 
 ###### Exceptions
 
-*3a.* The backend receives the request, but fails to confirm that the user is permitted to perform the action, since he is not authenticated.
+3a. The backend receives the request, but fails to confirm that the user is permitted to perform the action, since he is not authenticated.
 
 ###### Quality requirements
 
-*10.* When the upvote has been processed, the user should be given clear indication that it has been processed, either through a success message or a graphical representation.
-*11.* In the event of a failed upvote, the user should be presented with an error message describing why their upvote was not processed.
+10. When the upvote has been processed, the user should be given clear indication that it has been processed, either through a success message or a graphical representation.
+11. In the event of a failed upvote, the user should be presented with an error message describing why their upvote was not processed.
 
 ##### UPVOTE COMMENT
 
@@ -570,32 +570,32 @@ Bob: User
 
 ###### Flow of events
 
-*1.* Bob clicks the upvote button on a comment.
-*2.* The frontend sends a request to the API indicating that the given user wants to upvote the comment.
-*3.* The backend receives the request, confirms that the user is permitted to perform the action, and registers the user vote and increments the upvote count by 1.
-*4.* The web application receives a response, indicating that the request was successful.
-*5.* The upvote button is highlighted, indicating that Bob has upvoted the comment.
+1. Bob clicks the upvote button on a comment.
+2. The frontend sends a request to the API indicating that the given user wants to upvote the comment.
+3. The backend receives the request, confirms that the user is permitted to perform the action, and registers the user vote and increments the upvote count by 1.
+4. The web application receives a response, indicating that the request was successful.
+5. The upvote button is highlighted, indicating that Bob has upvoted the comment.
 
 ###### Entry conditions
 
-*6.* Bob has logged in successfully.
+6. Bob has logged in successfully.
 
-*7.* The post is not upvoted yet by Bob.
+7. The post is not upvoted yet by Bob.
 
 ###### Exit conditions
 
-*8.* Bob has received acknowledgement that the comment has been upvoted, OR
+8. Bob has received acknowledgement that the comment has been upvoted, OR
 
-*9.* The user receives an error message explaining why the upvote could not be processed.
+9. The user receives an error message explaining why the upvote could not be processed.
 
 ###### Exceptions
 
-*3a.* The backend receives the request, but fails to confirm that the user is permitted to perform the action, since he is not authenticated.
+3a. The backend receives the request, but fails to confirm that the user is permitted to perform the action, since he is not authenticated.
 
 ###### Quality requirements
 
-*10.* When the upvote has been processed, the user should be given clear indication that it has been processed, either through a success message or a graphical representation.
-*11.* In the event of a failed upvote, the user should be presented with an error message describing why their upvote was not processed.
+10. When the upvote has been processed, the user should be given clear indication that it has been processed, either through a success message or a graphical representation.
+11. In the event of a failed upvote, the user should be presented with an error message describing why their upvote was not processed.
 
 ##### DOWNVOTE COMMENT
 
@@ -605,30 +605,30 @@ Bob: User
 
 ###### Flow of events
 
-*1.* Bob clicks the downvote button on a post.
-*2.* The frontend sends a request to the API indicating that the given user wants to downvote the post, or cancel the downvote, if it's already downvoted.
-*3.* The backend receives the request, confirms that the user is permitted to perform the action, and registers the user vote and increments the downvote count by 1.
-*4.* The frontend receives a response, indicating that the request was successful.
-*5.* The downvote button is highlighted, indicating that Bob has downvoted the post.
+1. Bob clicks the downvote button on a post.
+2. The frontend sends a request to the API indicating that the given user wants to downvote the post, or cancel the downvote, if it's already downvoted.
+3. The backend receives the request, confirms that the user is permitted to perform the action, and registers the user vote and increments the downvote count by 1.
+4. The frontend receives a response, indicating that the request was successful.
+5. The downvote button is highlighted, indicating that Bob has downvoted the post.
 
 ###### Entry conditions
 
-*6.* Bob can see a post
+6. Bob can see a post
 
 ###### Exit conditions
 
-*7.* Bob has received acknowledgement that the post has been downvoted.
-*8.* Bob has received an explanation indicating why the transaction could not be processed.
-*9.* Bob has received acknowledgement that his downvote has been cancelled on the post.
+7. Bob has received acknowledgement that the post has been downvoted.
+8. Bob has received an explanation indicating why the transaction could not be processed.
+9. Bob has received acknowledgement that his downvote has been cancelled on the post.
 
 ###### Exceptions
 
-*3a.* The backend receives the request, but fails to confirm that the user is permitted to perform the action, since he is not authenticated.
+3a. The backend receives the request, but fails to confirm that the user is permitted to perform the action, since he is not authenticated.
 
 ###### Quality requirements
 
-*10.* When the downvote has been processed, the user should be given clear indication that it has been processed, either through a success message or a graphical representation.
-*11.* In the event of a failed downvote , the user should be presented with an error message describing why their downvote was not processed.
+10. When the downvote has been processed, the user should be given clear indication that it has been processed, either through a success message or a graphical representation.
+11. In the event of a failed downvote , the user should be presented with an error message describing why their downvote was not processed.
 
 ##### CREATE POST
 
@@ -637,23 +637,23 @@ User
 
 ###### Flow of events:
 
-*1.* User clicks on the Post button on the front page.
-*2*. User writes his post.
-*3*. User presses the *Submit* button
+1. User clicks on the Post button on the front page.
+2. User writes his post.
+3. User presses the *Submit* button
 
 ###### Entry condition:
-*4.* User is logged in.
+4. User is logged in.
 
 ###### Exit condition: 
 
-*5.* The post is created and the user is directed to the post thread page. OR
-*6.* The users is prompted a message that not all required information has been given.
+5. The post is created and the user is directed to the post thread page. OR
+6. The users is prompted a message that not all required information has been given.
 
 ###### Exceptions:
 
-*1a.* the User cant create post if he is not logged in.
+1a. the User cant create post if he is not logged in.
 
-*3a.* The User cant upload empty post, get a tooltip.
+3a. The User cant upload empty post, get a tooltip.
 
 ###### Quality requirements:
 
@@ -666,25 +666,25 @@ User
 
 ###### Flow of events:
 
-*1.* User clicks the write comment button on a post.
-*2.* User writes his comment and presses the Submit comment button.
-*3.* The frontend sends a request to the API indicating that the given user wants to write a comment.
-*4.* The backend receives the request, and post the comment to the database.
-*5.* The user receives a response indicating that his comment was successfully created.
+1. User clicks the write comment button on a post.
+2. User writes his comment and presses the Submit comment button.
+3. The frontend sends a request to the API indicating that the given user wants to write a comment.
+4. The backend receives the request, and post the comment to the database.
+5. The user receives a response indicating that his comment was successfully created.
 
 ###### Entry condition:
 
-*6.* User is logged in.
+6. User is logged in.
 
 ###### Exit condition:
 
-*7.* The User is redirected to the post and can see his new comment.
-*8.* The User gets an error message that tells him he can't write an empty comment.
+7. The User is redirected to the post and can see his new comment.
+8. The User gets an error message that tells him he can't write an empty comment.
 
 ###### Exceptions
 
-*3a.* The User can't create a comment if he is not logged in. 
-*4a.* If something goes wrong with the request in the backend the user is notified that the comment will be posted at a later time.
+3a. The User can't create a comment if he is not logged in. 
+4a. If something goes wrong with the request in the backend the user is notified that the comment will be posted at a later time.
 
 ###### Quality requirements:
 
@@ -699,26 +699,26 @@ User
 
 ###### Flow of events:
 
-*1.* User clicks the delete comment button on a post he wants to delete
-*2*. User confirms he wants to delete the comment.
-*3*. A request is sent to the API indicating that the given user wants to delete a comment.
-*4*. The backend receives the request and finds an deletes the comment from the database.
-*5*. The user receives a response indicating that the comment was deleted.
-*6*. The user can no longer see his comment on the post.
+1. User clicks the delete comment button on a post he wants to delete
+2. User confirms he wants to delete the comment.
+3. A request is sent to the API indicating that the given user wants to delete a comment.
+4. The backend receives the request and finds an deletes the comment from the database.
+5. The user receives a response indicating that the comment was deleted.
+6. The user can no longer see his comment on the post.
 
 ###### Entry Condition:
 
-*7.* User is logged in.
+7. User is logged in.
 
 ###### Exit condition:
 
-*8.* The comment is deleted.
-*9.* User gets an error message that says post is already deleted.
+8. The comment is deleted.
+9. User gets an error message that says post is already deleted.
 
 ###### Exceptions:
 
-*2a.* The user can't delete a comment if he is not logged in.
-*4a.* If something goes wrong with the request in the backend, the user is notified that his comment will be deleted at a later time.
+2a. The user can't delete a comment if he is not logged in.
+4a. If something goes wrong with the request in the backend, the user is notified that his comment will be deleted at a later time.
 
 ###### Quality requirements:
 
@@ -731,14 +731,14 @@ User
 
 ###### Flow of events:
 
-*1*. User clicks the *Delete* button on the post.
+1. User clicks the *Delete* button on the post.
 
 ###### Entry condition: 
-*2.* User is logged in and the user is the author of the post.
+2. User is logged in and the user is the author of the post.
 
 ###### Exit condition: 
 
-*3.* The post is deleted from the front page
+3. The post is deleted from the front page
 
 ###### Exceptions:
 
@@ -756,23 +756,23 @@ User
 
 ###### Flow of events:
 
-*1*. The user presses the update comment button on a previously written comments.
-*2*. The user edits his comment and presses the confirm update button.
-*3*. A request is sent to the API indicating that the user wants to update a comment.
-*4*. The backend receives the request and finds and updates the comment in the database and. The user receives a response telling that the comment has been updated.
+1. The user presses the update comment button on a previously written comments.
+2. The user edits his comment and presses the confirm update button.
+3. A request is sent to the API indicating that the user wants to update a comment.
+4. The backend receives the request and finds and updates the comment in the database and. The user receives a response telling that the comment has been updated.
 
 ###### Entry Conditions:
 
-*5.* The user is logged in.
+5. The user is logged in.
 
 ###### Exit Conditions:
 
-*6.* The comment is updated.
+6. The comment is updated.
 
 ###### Exceptions:
 
-*3a*. The user can't update a comment if he is not logged in.
-*4a*. If something goes wrong with the request the user is notified that his comment will be updated at a later time.
+3a. The user can't update a comment if he is not logged in.
+4a. If something goes wrong with the request the user is notified that his comment will be updated at a later time.
 
 ###### Quality requirements:
 
@@ -784,25 +784,25 @@ User
 
 ###### Flow of events:
 
-*1.* User clicks the edit profile button.
-*2.* User change what he want to change in his profile and press the update profile button.
-*3.* The frontend sends a request to the API indicating that the given user wants to update the profile.
-*4.* The backend receives the request, and post the user profile changes to the database.
-*5.* The user receives a response indicating that his profile was successfully updated.
+1. User clicks the edit profile button.
+2. User change what he want to change in his profile and press the update profile button.
+3. The frontend sends a request to the API indicating that the given user wants to update the profile.
+4. The backend receives the request, and post the user profile changes to the database.
+5. The user receives a response indicating that his profile was successfully updated.
 
 ###### Entry condition:
 
-*6.* User is logged in.
+6. User is logged in.
 
 ###### Exit condition:
 
-*7*. The User is redirected to the profile view and can see his new updated profile.
-*8*. The User gets an error message that tells him he filled out his profile wrong.
-*9*. The User get asked if hes want to save changes if hes havent saved changes.
+7. The User is redirected to the profile view and can see his new updated profile.
+8. The User gets an error message that tells him he filled out his profile wrong.
+9. The User get asked if hes want to save changes if hes havent saved changes.
 
 ###### Exceptions:
 
-*2a*. The User can't update profile if he is not logged in. 
+2a. The User can't update profile if he is not logged in. 
 
 ###### Quality requirements:
 
@@ -815,19 +815,19 @@ User
 
 ###### Flow of events:
 
-*1.* User clicks *Login* in the top right corner of the home page.
-*2.* User enters credentials and clicks *Login*
+1. User clicks *Login* in the top right corner of the home page.
+2. User enters credentials and clicks *Login*
 
 ###### Entry condition:
-*3.* User is not logged in.
+3. User is not logged in.
 
 ###### Exit condition: 
 
-*4.* The user is redirected to the front page and username is visible in top right corner. OR
-*5.* The user is kept on the login page, given a message that username/password was incorrect/missing.
+4. The user is redirected to the front page and username is visible in top right corner. OR
+5. The user is kept on the login page, given a message that username/password was incorrect/missing.
 
 ###### Exceptions:
-*2a.* No connection to login server.
+2a. No connection to login server.
 
 ###### Quality requirements:
 
@@ -840,16 +840,16 @@ User
 
 ###### Flow if events:
 
-*1*. User clicks the *Update* button on the post.
-*2.* User changes the comment for the post
-*3*. User clicks the *Update* icon
+1. User clicks the *Update* button on the post.
+2. User changes the comment for the post
+3. User clicks the *Update* icon
 
 ###### Entry condition:
-*4.* User is logged in and the user is the author of the post.
+4. User is logged in and the user is the author of the post.
 
 ###### Exit condition: 
 
-*5.* The user is redirected to the thread page and can see the updated content.
+5. The user is redirected to the thread page and can see the updated content.
 
 ###### Exceptions:
 
@@ -875,8 +875,8 @@ N/A
 
 ###### Exit condition: 
 
-*4.* The user is taken to the links thread page.
-*5.* By clicking the link in the thread page, the user is taken to the links page, where the user can read the content.
+4. The user is taken to the links thread page.
+5. By clicking the link in the thread page, the user is taken to the links page, where the user can read the content.
 
 ###### Exceptions:
 3a. no connection to server.
@@ -893,23 +893,23 @@ User
 
 ###### Flow of events:
 
-*1.* User clicks *Login* in the top right corner of the home page.
-*2.* User clicks *Sign up for an account* on the login page.
-*3.* User enters a username and a password, then clicks *Sign up*.
+1. User clicks *Login* in the top right corner of the home page.
+2. User clicks *Sign up for an account* on the login page.
+3. User enters a username and a password, then clicks *Sign up*.
 
 ###### Entry condition:
 *4.* User is not logged in.
 
 ###### Exit condition: 
 
-*5.* The user is redirected to the front page and username is visible in top right corner.
-*6.* The user is kept on the sign up page, given one of the following messages:
-  *6.1*. Username already taken.
-  *6.2*. Missing fields
-  *6.3*. (Username is invalid??) <- Security reasons?
+5. The user is redirected to the front page and username is visible in top right corner.
+6. The user is kept on the sign up page, given one of the following messages:
+  6.1. Username already taken.
+  6.2. Missing fields
+  6.3. (Username is invalid??) <- Security reasons?
 
 ###### Exceptions
-*3a.* no connection to server.
+3a. no connection to server.
 
 ###### Quality requirements:
 
