@@ -866,9 +866,9 @@ User
 
 ###### Flow of events:
 
-*1.* User clicks on a post from the front page.
-*2.* User is taken to the link's thread page, where the user finds the link, along with the comments that other users have left relating to the link.
-*3.* User clicks on the link, and is taken to the page, where he can read or view the contents.
+1. User clicks on a post from the front page.
+2. User is taken to the link's thread page, where the user finds the link, along with the comments that other users have left relating to the link.
+3. User clicks on the link, and is taken to the page, where he can read or view the contents.
 
 ###### Entry condition:
 N/A
@@ -898,7 +898,7 @@ User
 3. User enters a username and a password, then clicks *Sign up*.
 
 ###### Entry condition:
-*4.* User is not logged in.
+4. User is not logged in.
 
 ###### Exit condition: 
 
