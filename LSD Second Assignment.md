@@ -24,7 +24,7 @@ The application subsystems reside in it's own automatically scalable instance gr
 
 In front of each application subsystem is a dynamic load balancer, which allows us to scale horizontally in any subsystem layer across the entire system, rapidly deploy new application versions with zero downtime, automatically handle backup plans in case of power outages and protect us against nature catastrophes. If one instance is somehow terminated unexpectedly, another instance is immediately deployed with our application and rerouted through the load balancer. 
 
-######Database management
+###### Database management
 
 Our database is stored on a separate AWS RDS instance, which is only available inside our virtual private cloud. RDS makes makes it easy to set up, operate, and scale a relational database in the cloud.
 
@@ -48,7 +48,7 @@ If the reviewer adds any comments, changes or additions in the review these issu
 
 Once the review has passed, the code is merged into the staging branch, where it resides until the project manager and quality assurance decides to deploy a build to production. 
 
-#####Releasing features to production
+##### Releasing features to production
 
 When a feature is considered shippable, a release-to-production request can be initiated. Releasing features into production is done by initiating an additional merge request onto the production environment. This will trigger a build process similar to the one towards the staging environment, but this time, the focus is on the quality assurance and requirements specification.
 
